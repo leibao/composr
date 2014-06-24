@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseTypeViewController">
             <connections>
+                <outlet property="imageView" destination="EPK-xi-UpI" id="rIg-ww-KR5"/>
+                <outlet property="scrollView" destination="T8G-Uz-NVx" id="3yB-Vc-VuH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,19 +16,35 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testEmail" id="USn-0q-Rs5">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" id="USn-0q-Rs5">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <gestureRecognizers/>
                 </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="T8G-Uz-NVx">
+                    <rect key="frame" x="0.0" y="378" width="328" height="190"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="EPK-xi-UpI">
+                            <rect key="frame" x="0.0" y="0.0" width="566" height="190"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                </scrollView>
+                <view contentMode="scaleToFill" id="zJa-Q1-QB2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="YAQ-p7-S8K" appends="YES" id="HOi-s8-8qv"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <gestureRecognizers/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <connections>
-                <outletCollection property="gestureRecognizers" destination="YAQ-p7-S8K" appends="YES" id="Dtq-P8-Sia"/>
-            </connections>
         </view>
         <panGestureRecognizer minimumNumberOfTouches="1" id="YAQ-p7-S8K">
             <connections>
@@ -35,6 +53,6 @@
         </panGestureRecognizer>
     </objects>
     <resources>
-        <image name="testEmail" width="320" height="568"/>
+        <image name="email" width="640" height="1114"/>
     </resources>
 </document>

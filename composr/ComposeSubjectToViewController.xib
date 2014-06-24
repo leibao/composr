@@ -19,25 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zz5-4l-IpI">
-                    <rect key="frame" x="0.0" y="119" width="320" height="221"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pMz-al-KO2">
-                            <rect key="frame" x="0.0" y="20" width="338" height="83"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="To" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3j-HZ-FmH">
-                            <rect key="frame" x="0.0" y="130" width="320" height="37"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-E6-h3E">
                     <rect key="frame" x="0.0" y="517" width="320" height="51"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,6 +47,44 @@
                     </subviews>
                     <color key="backgroundColor" white="0.92116218065693434" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zz5-4l-IpI">
+                    <rect key="frame" x="0.0" y="119" width="320" height="397"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pMz-al-KO2">
+                            <rect key="frame" x="20" y="20" width="280" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="To" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3j-HZ-FmH">
+                            <rect key="frame" x="0.0" y="130" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="onTapTo:" destination="-1" eventType="touchUpInside" id="Ngv-jN-Efs"/>
+                                <action selector="onTapTo:" destination="-1" eventType="touchDown" id="V5a-A6-hui"/>
+                                <action selector="onTapTo:" destination="-1" eventType="editingDidEnd" id="sX1-GV-auW"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="nhE-iY-gmE" appends="YES" id="eD1-XX-lCO"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-Me-g7h">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="T5P-od-j4w" appends="YES" id="g1z-WO-5Ap"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <gestureRecognizers/>
@@ -73,7 +92,6 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="msE-jr-DeQ" appends="YES" id="sZ6-L3-8zP"/>
-                <outletCollection property="gestureRecognizers" destination="nhE-iY-gmE" appends="YES" id="g7z-cY-qI4"/>
             </connections>
         </view>
         <tapGestureRecognizer id="msE-jr-DeQ">
@@ -81,9 +99,14 @@
                 <action selector="onTap:" destination="-1" id="EaZ-7g-AGr"/>
             </connections>
         </tapGestureRecognizer>
-        <swipeGestureRecognizer direction="down" id="nhE-iY-gmE">
+        <panGestureRecognizer minimumNumberOfTouches="1" id="T5P-od-j4w">
             <connections>
-                <action selector="onSwipeDown:" destination="-1" id="Kqf-cJ-8Aw"/>
+                <action selector="onDrag:" destination="-1" id="9DB-yi-z0y"/>
+            </connections>
+        </panGestureRecognizer>
+        <swipeGestureRecognizer direction="left" id="nhE-iY-gmE">
+            <connections>
+                <action selector="onSwipeLeft:" destination="-1" id="A0W-8g-SWl"/>
             </connections>
         </swipeGestureRecognizer>
     </objects>

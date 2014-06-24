@@ -12,6 +12,8 @@
 @interface ChooseTypeViewController ()
 - (IBAction)onDrag:(UIPanGestureRecognizer *)sender;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 
 @end
@@ -32,6 +34,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
    // self.navigationItem.title = @"Choose Mail Type";
+   
+    //load scroll view
+    self.scrollView.contentSize = self.imageView.frame.size;
+    
+    UIImageView *iv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ChooseStyle"]];
+    
+    iv.frame = CGRectMake(0.0, 0.0, iv.frame.size.width, iv.frame.size.height);
+    [self.scrollView addSubview:iv];
     
 
 }
