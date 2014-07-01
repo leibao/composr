@@ -38,20 +38,34 @@
         // setup tabbars
         self.tab1vc = [[ListLettersViewController alloc] init];
         self.emptytab1vc = [[EmptyListViewController alloc] init];
-        self.emptytab1nvc = [[UINavigationController alloc] initWithRootViewController:self.emptytab1vc];
+        //self.emptytab1nvc = [[UINavigationController alloc] initWithRootViewController:self.emptytab1vc];
 
+        
         self.tab2vc = [[MyselfViewController alloc] init];
+        
+        //self.emptytab1nvc.navigationBar.alpha = 0;
+       // self.emptytab1nvc.navigationBar.translucent = YES;
+        
+
+        
+        
         
     }
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
+
+    
+
+    
     [super viewDidLoad];
     self.emptytab1vc.view.frame = self.DisplayView.frame;
     
-    [self.DisplayView addSubview: self.emptytab1nvc.view];
+    [self.DisplayView addSubview: self.emptytab1vc.view];
     NSLog(@"before bounce: %f", self.bouncer.center.y);
     
     self.bouncer.center = CGPointMake(160, 410);
@@ -74,7 +88,7 @@
 
 - (IBAction)ontab1:(id)sender {
     
-    [self.DisplayView addSubview: self.emptytab1nvc.view];
+    [self.DisplayView addSubview: self.emptytab1vc.view];
     self.bouncer.hidden = NO;
 }
 

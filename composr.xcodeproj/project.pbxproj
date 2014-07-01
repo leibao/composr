@@ -19,6 +19,8 @@
 		3719098C196121E700ACBDB8 /* EmptyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3719098A196121E700ACBDB8 /* EmptyListViewController.xib */; };
 		3719099019612E1000ACBDB8 /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719098E19612E1000ACBDB8 /* SelectTypeViewController.m */; };
 		3719099119612E1000ACBDB8 /* SelectTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3719098F19612E1000ACBDB8 /* SelectTypeViewController.xib */; };
+		3719099519628BAC00ACBDB8 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719099319628BAC00ACBDB8 /* Tab2ViewController.m */; };
+		3719099619628BAC00ACBDB8 /* Tab2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3719099419628BAC00ACBDB8 /* Tab2ViewController.xib */; };
 		37300E3519515E9D006A472B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37300E3419515E9D006A472B /* Foundation.framework */; };
 		37300E3719515E9D006A472B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37300E3619515E9D006A472B /* CoreGraphics.framework */; };
 		37300E3919515E9D006A472B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37300E3819515E9D006A472B /* UIKit.framework */; };
@@ -68,6 +70,9 @@
 		3719098D19612E1000ACBDB8 /* SelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeViewController.h; sourceTree = "<group>"; };
 		3719098E19612E1000ACBDB8 /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
 		3719098F19612E1000ACBDB8 /* SelectTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTypeViewController.xib; sourceTree = "<group>"; };
+		3719099219628BAC00ACBDB8 /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab2ViewController.h; sourceTree = "<group>"; };
+		3719099319628BAC00ACBDB8 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
+		3719099419628BAC00ACBDB8 /* Tab2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tab2ViewController.xib; sourceTree = "<group>"; };
 		37300E3119515E9D006A472B /* composr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = composr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37300E3419515E9D006A472B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37300E3619515E9D006A472B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +188,9 @@
 				3719098D19612E1000ACBDB8 /* SelectTypeViewController.h */,
 				3719098E19612E1000ACBDB8 /* SelectTypeViewController.m */,
 				3719098F19612E1000ACBDB8 /* SelectTypeViewController.xib */,
+				3719099219628BAC00ACBDB8 /* Tab2ViewController.h */,
+				3719099319628BAC00ACBDB8 /* Tab2ViewController.m */,
+				3719099419628BAC00ACBDB8 /* Tab2ViewController.xib */,
 			);
 			path = composr;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 				3719097D196104AE00ACBDB8 /* TabViewController.xib in Resources */,
 				3719098719611C6800ACBDB8 /* MyselfViewController.xib in Resources */,
 				37300E76195398FC006A472B /* ChooseTypeViewController.xib in Resources */,
+				3719099619628BAC00ACBDB8 /* Tab2ViewController.xib in Resources */,
 				37300E3F19515E9D006A472B /* InfoPlist.strings in Resources */,
 				371909781960A02600ACBDB8 /* LoginViewController.xib in Resources */,
 				3719098219611C5B00ACBDB8 /* ListLettersViewController.xib in Resources */,
@@ -331,6 +340,7 @@
 				3719097C196104AE00ACBDB8 /* TabViewController.m in Sources */,
 				3719098B196121E700ACBDB8 /* EmptyListViewController.m in Sources */,
 				37300E6619515F4B006A472B /* ListViewController.m in Sources */,
+				3719099519628BAC00ACBDB8 /* Tab2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 @interface EmptyListViewController ()
 @property (strong, nonatomic) UIWindow *foregroundWindow;
 @property (weak, nonatomic) IBOutlet UIImageView *bkimage;
+- (IBAction)onLogin:(id)sender;
 
 - (void)onLoginButton;
 
@@ -30,10 +31,15 @@
 
 - (void)viewDidLoad
 {
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.navigationItem.title = @"LetterPost";
+    //self.navigationItem.title = @"LetterPost";
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-white"]];
+    
+    
     NSLog(@"title is: %@", self.navigationItem.title);
     
     //configure right button
@@ -58,16 +64,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)onLoginButton {
+- (IBAction)onLogin:(id)sender {
+    
     
     NSLog(@"login");
     
-   // LoginViewController *lvc = [[LoginViewController alloc] init];
+    // LoginViewController *lvc = [[LoginViewController alloc] init];
     
     self.foregroundWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.foregroundWindow.rootViewController = [LoginViewController new];
     self.foregroundWindow.windowLevel = UIWindowLevelStatusBar;
     self.foregroundWindow.hidden = NO;
+}
+
+- (void)onLoginButton {
+
     
 }
 

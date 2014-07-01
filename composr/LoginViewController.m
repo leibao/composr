@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "TabViewController.h"
 #import "ListLettersViewController.h"
+#import "Tab2ViewController.h"
 
 @interface LoginViewController ()
 
@@ -53,8 +54,8 @@
 
 - (IBAction)onSigninButton:(id)sender {
     
-    ListLettersViewController *Listvc = [[ListLettersViewController alloc] init];
-    TabViewController *tabvc = [[TabViewController alloc] init];
+    //ListLettersViewController *Listvc = [[ListLettersViewController alloc] init];
+    Tab2ViewController *tabvc = [[Tab2ViewController alloc] init];
     [self presentViewController:tabvc animated:YES completion: nil];
     
 }

@@ -32,6 +32,8 @@
     self.window.rootViewController = tvc;
     [self.window makeKeyAndVisible];
     
+    
+    
     // email view
     
 //    self.foregroundWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
