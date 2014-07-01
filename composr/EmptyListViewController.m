@@ -46,7 +46,7 @@
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Login" style:UIBarButtonItemStylePlain target:self action:@selector(onLoginButton)];
     self.navigationItem.rightBarButtonItem = rightButton;
     
-    self.bkimage.center = CGPointMake(160, 284);
+    self.bkimage.center = CGPointMake(100, 284);
     
     [UIView animateWithDuration:10 delay:0 options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionRepeat animations:^{
         self.bkimage.center = CGPointMake(320, 284);
