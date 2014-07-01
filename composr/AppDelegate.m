@@ -10,6 +10,7 @@
 #import "ListViewController.h"
 #import "ComposeSubjectToViewController.h"
 #import "ChooseTypeViewController.h"
+#import "TabViewController.h"
 
 
 @implementation AppDelegate
@@ -17,13 +18,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // List view
     
-    ListViewController *listvc = [[ListViewController alloc] init];
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:listvc];
-    self.window.rootViewController = nvc;
-    nvc.navigationBar.barTintColor = [UIColor colorWithRed:171.0f/255.0f green:220.0f/255.0f blue:214.0f/255.0f alpha:0.9f];
-    self.window.backgroundColor = [UIColor whiteColor];
+    // List view
+//    ListViewController *listvc = [[ListViewController alloc] init];
+//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:listvc];
+//    self.window.rootViewController = nvc;
+//    nvc.navigationBar.barTintColor = [UIColor colorWithRed:171.0f/255.0f green:220.0f/255.0f blue:214.0f/255.0f alpha:0.9f];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+    
+    //tab view
+    TabViewController *tvc = [[TabViewController alloc] init];
+    self.window.rootViewController = tvc;
     [self.window makeKeyAndVisible];
     
     // email view
