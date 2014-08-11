@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -32,6 +34,22 @@
 	<true/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MinionPro-Bold.otf</string>
+		<string>EBGaramond-Regular.ttf</string>
+		<string>Josefin Sans 600.ttf</string>
+		<string>Josefin Sans regular.ttf</string>
+		<string>Lato 300.ttf</string>
+		<string>Lato 700italic.ttf</string>
+		<string>Lato 900.ttf</string>
+		<string>Lato regular.ttf</string>
+		<string>Merriweather regular.ttf</string>
+		<string>Montserrat regular.ttf</string>
+		<string>Oswald regular.ttf</string>
+		<string>PT Sans regular.ttf</string>
+		<string>PT Serif regular.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

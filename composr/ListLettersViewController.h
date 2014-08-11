@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListLettersViewController : UIViewController <UIScrollViewDelegate>
+@interface ListLettersViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @end

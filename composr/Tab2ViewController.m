@@ -10,6 +10,7 @@
 #import "ListLettersViewController.h"
 #import "MyselfViewController.h"
 #import "SelectTypeViewController.h"
+#import "ChooseTypeViewController.h"
 
 @interface Tab2ViewController ()
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) MyselfViewController *tab2vc;
 @property (strong, nonatomic) UIWindow *selectTypeWindow;
 @property (weak, nonatomic) IBOutlet UIView *DisplayView;
+@property (strong, nonatomic) UIWindow *foregroundWindow;
 
 
 - (IBAction)ontab1:(id)sender;
@@ -49,6 +51,26 @@
     self.tab1vc.view.frame = self.DisplayView.frame;
     
     [self.DisplayView addSubview: self.tab1vc.view];
+    
+    //clear default keys
+    NSString *subjectText = @"Subject";
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:subjectText forKey:@"subjectText"];
+    
+    NSString *toText = @"To";
+
+    [defaults setObject:toText forKey:@"toText"];
+    
+    NSString *bodyText = @"";
+    
+    [defaults setObject:bodyText forKey:@"bodyText"];
+    
+    NSString *templatecount = @"template1";
+    
+    [defaults setObject:templatecount forKey:@"templatecount"];
+    
 
 }
 
@@ -67,10 +89,23 @@
 }
 
 - (IBAction)onCompose:(id)sender {
-    
+   
+    /* No navigation bar on the top of the selecet type page */
     self.selectTypeWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.selectTypeWindow.rootViewController = [SelectTypeViewController new];
     self.selectTypeWindow.windowLevel = UIWindowLevelStatusBar;
     self.selectTypeWindow.hidden = NO;
+    
+    
+    /* user navigation bar on the top of the selecet type page */
+//    self.foregroundWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//
+//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[SelectTypeViewController new]];
+//
+//    self.foregroundWindow.rootViewController = nvc;
+//    self.foregroundWindow.windowLevel = UIWindowLevelStatusBar;
+//    self.foregroundWindow.hidden = NO;
+    
+    
 }
 @end

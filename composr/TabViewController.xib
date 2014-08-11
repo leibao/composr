@@ -43,9 +43,9 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="amc-7A-Vgb">
-                            <rect key="frame" x="261" y="31" width="31" height="39"/>
+                            <rect key="frame" x="263" y="32" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" backgroundImage="icon-myself">
+                            <state key="normal" backgroundImage="icon-settings">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -53,7 +53,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" id="XpC-EB-2F3">
-                            <rect key="frame" x="34" y="32" width="33" height="38"/>
+                            <rect key="frame" x="34" y="32" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
                             <state key="normal" backgroundImage="icon-letters">
@@ -85,7 +85,7 @@
     <resources>
         <image name="bk-bounce" width="130" height="65"/>
         <image name="btn-compose-white" width="80" height="80"/>
-        <image name="icon-letters" width="33" height="38"/>
-        <image name="icon-myself" width="31" height="39"/>
+        <image name="icon-letters" width="30" height="30"/>
+        <image name="icon-settings" width="30" height="30"/>
     </resources>
 </document>

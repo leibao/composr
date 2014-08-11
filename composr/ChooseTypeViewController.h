@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChooseTypeViewController : UIViewController
+@interface ChooseTypeViewController : UIViewController <UITextViewDelegate>
 
 @end

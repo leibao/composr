@@ -7,7 +7,7 @@
 //
 
 #import "ListViewController.h"
-#import "ComposeSubjectToViewController.h"
+
 
 
 @interface ListViewController ()
@@ -119,7 +119,7 @@
     // email view
     
     self.foregroundWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.foregroundWindow.rootViewController = [ComposeSubjectToViewController new];
+    self.foregroundWindow.rootViewController = [ new];
     self.foregroundWindow.windowLevel = UIWindowLevelStatusBar;
     self.foregroundWindow.hidden = NO;
     

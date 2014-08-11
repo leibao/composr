@@ -7,9 +7,13 @@
 //
 
 #import "SelectTypeViewController.h"
+#import "ChooseTypeViewController.h"
+#import "ComposeSubjectToViewController.h"
+#import "TextViewController.h"
+#import "Tab2ViewController.h"
 
 @interface SelectTypeViewController ()
-- (IBAction)onNeverMind:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UIButton *btnText;
 @property (weak, nonatomic) IBOutlet UIButton *btnPhoto;
 @property (weak, nonatomic) IBOutlet UIButton *btnLink;
@@ -18,8 +22,16 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnEvent;
 @property (weak, nonatomic) IBOutlet UIButton *btnPoll;
 @property (weak, nonatomic) IBOutlet UIButton *btnBarcode;
+@property (strong, nonatomic) UIWindow *foregroundWindow;
+
+- (IBAction)onMaybelLater:(id)sender;
+
+
+- (IBAction)onTextButton:(id)sender;
 
 -(void)closeWindow;
+-(void)onLeftButton;
+-(void)onRightButton;
 
 @end
 
@@ -38,6 +50,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = @"Select";
+//    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(onLeftButton)];
+//    self.navigationItem.leftBarButtonItem = leftButton;
+//    
+//    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(onRightButton)];
+//    self.navigationItem.rightBarButtonItem = rightButton;
     
     NSLog(@"loaded");
     
@@ -100,7 +119,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onNeverMind:(id)sender {
+- (IBAction)onMaybelLater:(id)sender {
     
     [UIView animateWithDuration:0.2 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:2 options:0 animations:^{
         self.btnText.frame = CGRectMake(self.btnText.frame.origin.x, -120, self.btnText.frame.size.width, self.btnText.frame.size.height);
@@ -140,8 +159,42 @@
     
 }
 
+
+- (IBAction)onTextButton:(id)sender {
+    
+//    ChooseTypeViewController *chooseType = [[ChooseTypeViewController alloc] init];
+//    [self.navigationController pushViewController:chooseType animated:YES];
+
+    self.foregroundWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[TextViewController new]];
+
+    self.foregroundWindow.rootViewController = nvc;
+    self.foregroundWindow.windowLevel = UIWindowLevelStatusBar;
+    self.foregroundWindow.hidden = NO;
+
+//
+
+
+}
+
 - (void)closeWindow {
-    self.view.window.frame = CGRectMake(0, self.view.frame.size.height + 120, self.view.frame.size.width, self.view.frame.size.height);
+    //self.view.window.frame = CGRectMake(0, self.view.frame.size.height+120, self.view.frame.size.width, self.view.frame.size.height);
+
+    Tab2ViewController *tabvc = [[Tab2ViewController alloc] init];
+    [self presentViewController:tabvc animated:YES completion: nil];
+}
+
+- (void)onLeftButton {
+    
+}
+
+- (void)onRightButton {
+    
+
+    
 }
 
 @end
+
+

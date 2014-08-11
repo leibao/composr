@@ -1,0 +1,260 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:\Garamond
+FileModTime:1406216113
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:JosefinSans-SemiBold
+FamilyName:Josefin Sans
+StyleName:SemiBold
+MenuName:Josefin Sans
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Josefin Sans SemiBold
+WritingScript:Roman
+OutlineFileName:\Josefin Sans 600.ttf
+DataFormat:sfntData
+FileLength:33004
+FileModTime:1406216115
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:JosefinSans
+FamilyName:Josefin Sans
+StyleName:Regular
+MenuName:Josefin Sans
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Josefin Sans
+WritingScript:Roman
+OutlineFileName:\Josefin Sans regular.ttf
+DataFormat:sfntData
+FileLength:33008
+FileModTime:1406216116
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Light
+FamilyName:Lato
+StyleName:Light
+MenuName:Lato Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Lato-Light
+WritingScript:Roman
+OutlineFileName:\Lato 300.ttf
+DataFormat:sfntData
+FileLength:122524
+FileModTime:1406216118
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-BoldItalic
+FamilyName:Lato
+StyleName:Bold Italic
+MenuName:Lato
+StyleBits:3
+WeightClass:700
+WidthClass:5
+AngleClass:1
+FullName:Lato Bold Italic
+WritingScript:Roman
+OutlineFileName:\Lato 700italic.ttf
+DataFormat:sfntData
+FileLength:120312
+FileModTime:1406216120
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Black
+FamilyName:Lato
+StyleName:Black
+MenuName:Lato Black
+StyleBits:0
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Lato Black
+WritingScript:Roman
+OutlineFileName:\Lato 900.ttf
+DataFormat:sfntData
+FileLength:114588
+FileModTime:1406216121
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Regular
+FamilyName:Lato
+StyleName:Regular
+MenuName:Lato
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Lato Regular
+WritingScript:Roman
+OutlineFileName:\Lato regular.ttf
+DataFormat:sfntData
+FileLength:120196
+FileModTime:1406216123
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Merriweather
+FamilyName:Merriweather
+StyleName:Regular
+MenuName:Merriweather
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Merriweather
+WritingScript:Roman
+OutlineFileName:\Merriweather regular.ttf
+DataFormat:sfntData
+FileLength:46576
+FileModTime:1406216124
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Bold
+FamilyName:Minion Pro
+StyleName:Bold
+MenuName:Minion Pro
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro Bold
+WritingScript:Roman
+OutlineFileName:\MinionPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:217028
+FileModTime:1406216125
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Regular
+FamilyName:Montserrat
+StyleName:Regular
+MenuName:Montserrat
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Montserrat-Regular
+WritingScript:Roman
+OutlineFileName:\Montserrat regular.ttf
+DataFormat:sfntData
+FileLength:29016
+FileModTime:1406216126
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-Regular
+FamilyName:Oswald
+StyleName:Regular
+MenuName:Oswald
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Oswald Regular
+WritingScript:Roman
+OutlineFileName:\Oswald regular.ttf
+DataFormat:sfntData
+FileLength:50944
+FileModTime:1406216127
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:PTSans-Regular
+FamilyName:PT Sans
+StyleName:Regular
+MenuName:PT Sans
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:PT Sans
+WritingScript:Roman
+OutlineFileName:\PT Sans regular.ttf
+DataFormat:sfntData
+FileLength:442960
+FileModTime:1406216129
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:PTSerif-Regular
+FamilyName:PT Serif
+StyleName:Regular
+MenuName:PT Serif
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:PT Serif
+WritingScript:Roman
+OutlineFileName:\PT Serif regular.ttf
+DataFormat:sfntData
+FileLength:359048
+FileModTime:1406216130
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Light
+FamilyName:Roboto
+StyleName:Light
+MenuName:Roboto Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Roboto Light
+WritingScript:Roman
+OutlineFileName:\Roboto 300.ttf
+DataFormat:sfntData
+FileLength:140276
+FileModTime:1406216131
+%EndFont
+

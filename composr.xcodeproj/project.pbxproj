@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370B38D7196DF2D7004B60F0 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B38D5196DF2D7004B60F0 /* testViewController.m */; };
+		370B38D8196DF2D7004B60F0 /* testViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370B38D6196DF2D7004B60F0 /* testViewController.xib */; };
 		371909771960A02600ACBDB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371909751960A02600ACBDB8 /* LoginViewController.m */; };
 		371909781960A02600ACBDB8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371909761960A02600ACBDB8 /* LoginViewController.xib */; };
 		3719097C196104AE00ACBDB8 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719097A196104AE00ACBDB8 /* TabViewController.m */; };
@@ -33,12 +35,51 @@
 		37300E5019515E9E006A472B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37300E3819515E9D006A472B /* UIKit.framework */; };
 		37300E5819515E9E006A472B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37300E5619515E9E006A472B /* InfoPlist.strings */; };
 		37300E5A19515E9E006A472B /* composrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37300E5919515E9E006A472B /* composrTests.m */; };
-		37300E6619515F4B006A472B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37300E6419515F4B006A472B /* ListViewController.m */; };
-		37300E6719515F4B006A472B /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37300E6519515F4B006A472B /* ListViewController.xib */; };
-		37300E7019538F5B006A472B /* ComposeSubjectToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37300E6E19538F5B006A472B /* ComposeSubjectToViewController.m */; };
-		37300E7119538F5B006A472B /* ComposeSubjectToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37300E6F19538F5B006A472B /* ComposeSubjectToViewController.xib */; };
-		37300E75195398FC006A472B /* ChooseTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37300E73195398FC006A472B /* ChooseTypeViewController.m */; };
-		37300E76195398FC006A472B /* ChooseTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37300E74195398FC006A472B /* ChooseTypeViewController.xib */; };
+		378E187E19707B1100D40EF2 /* letterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E187C19707B1100D40EF2 /* letterCell.m */; };
+		378E187F19707B1100D40EF2 /* letterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E187D19707B1100D40EF2 /* letterCell.xib */; };
+		378E18881978789800D40EF2 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E18861978789800D40EF2 /* TextViewController.m */; };
+		378E18891978789800D40EF2 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E18871978789800D40EF2 /* TextViewController.xib */; };
+		378E188D19788A5900D40EF2 /* SubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E188B19788A5900D40EF2 /* SubjectViewController.m */; };
+		378E188E19788A5900D40EF2 /* SubjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E188C19788A5900D40EF2 /* SubjectViewController.xib */; };
+		37D6C05A197E380000EEFAF1 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C058197E380000EEFAF1 /* ToViewController.m */; };
+		37D6C05B197E380000EEFAF1 /* ToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C059197E380000EEFAF1 /* ToViewController.xib */; };
+		37D6C0B91981C2B700EEFAF1 /* Josefin Sans 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0AA1981C2B700EEFAF1 /* Josefin Sans 600.ttf */; };
+		37D6C0BA1981C2B700EEFAF1 /* Josefin Sans regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0AB1981C2B700EEFAF1 /* Josefin Sans regular.ttf */; };
+		37D6C0BB1981C2B700EEFAF1 /* Lato 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0AC1981C2B700EEFAF1 /* Lato 300.ttf */; };
+		37D6C0BC1981C2B700EEFAF1 /* Lato 700italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0AD1981C2B700EEFAF1 /* Lato 700italic.ttf */; };
+		37D6C0BD1981C2B700EEFAF1 /* Lato 900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0AE1981C2B700EEFAF1 /* Lato 900.ttf */; };
+		37D6C0BE1981C2B700EEFAF1 /* Lato regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0AF1981C2B700EEFAF1 /* Lato regular.ttf */; };
+		37D6C0BF1981C2B700EEFAF1 /* Merriweather regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0B01981C2B700EEFAF1 /* Merriweather regular.ttf */; };
+		37D6C0C01981C2B700EEFAF1 /* MinionPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0B11981C2B700EEFAF1 /* MinionPro-Bold.otf */; };
+		37D6C0C11981C2B700EEFAF1 /* Montserrat regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0B21981C2B700EEFAF1 /* Montserrat regular.ttf */; };
+		37D6C0C21981C2B700EEFAF1 /* Oswald regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0B31981C2B700EEFAF1 /* Oswald regular.ttf */; };
+		37D6C0C31981C2B700EEFAF1 /* PT Sans regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0B41981C2B700EEFAF1 /* PT Sans regular.ttf */; };
+		37D6C0C41981C2B700EEFAF1 /* PT Serif regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0B51981C2B700EEFAF1 /* PT Serif regular.ttf */; };
+		37D6C0C71981C34500EEFAF1 /* EBGaramond-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0C61981C33500EEFAF1 /* EBGaramond-Regular.ttf */; };
+		37D6C0CB1982C2BB00EEFAF1 /* EmailBodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C0C91982C2BB00EEFAF1 /* EmailBodyViewController.m */; };
+		37D6C0CC1982C2BB00EEFAF1 /* EmailBodyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0CA1982C2BB00EEFAF1 /* EmailBodyViewController.xib */; };
+		37D6C0D0198767C600EEFAF1 /* EmailPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C0CE198767C600EEFAF1 /* EmailPreviewViewController.m */; };
+		37D6C0D1198767C600EEFAF1 /* EmailPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C0CF198767C600EEFAF1 /* EmailPreviewViewController.xib */; };
+		37D6C1051988665F00EEFAF1 /* PageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C1031988665F00EEFAF1 /* PageTextViewController.m */; };
+		37D6C1061988665F00EEFAF1 /* PageTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C1041988665F00EEFAF1 /* PageTextViewController.xib */; };
+		37D6C10A1988677C00EEFAF1 /* PageEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C1081988677C00EEFAF1 /* PageEndViewController.m */; };
+		37D6C10B1988677C00EEFAF1 /* PageEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C1091988677C00EEFAF1 /* PageEndViewController.xib */; };
+		37D6C110199548B100EEFAF1 /* JapanTripEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C10E199548B100EEFAF1 /* JapanTripEmailViewController.m */; };
+		37D6C111199548B100EEFAF1 /* JapanTripEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C10F199548B100EEFAF1 /* JapanTripEmailViewController.xib */; };
+		37D6C11A1995491400EEFAF1 /* JapanTripPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C1181995491400EEFAF1 /* JapanTripPage2ViewController.m */; };
+		37D6C11B1995491400EEFAF1 /* JapanTripPage2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C1191995491400EEFAF1 /* JapanTripPage2ViewController.xib */; };
+		37D6C11F1995492700EEFAF1 /* JapanTripPage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C11D1995492700EEFAF1 /* JapanTripPage3ViewController.m */; };
+		37D6C1201995492700EEFAF1 /* JapanTripPage3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C11E1995492700EEFAF1 /* JapanTripPage3ViewController.xib */; };
+		37D6C1241995493600EEFAF1 /* JapanTripPage4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C1221995493600EEFAF1 /* JapanTripPage4ViewController.m */; };
+		37D6C1251995493600EEFAF1 /* JapanTripPage4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C1231995493600EEFAF1 /* JapanTripPage4ViewController.xib */; };
+		37D6C1291995494600EEFAF1 /* JapanTripPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C1271995494600EEFAF1 /* JapanTripPage5ViewController.m */; };
+		37D6C12A1995494600EEFAF1 /* JapanTripPage5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C1281995494600EEFAF1 /* JapanTripPage5ViewController.xib */; };
+		37D6C12E1995495700EEFAF1 /* JapanTripPage6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C12C1995495700EEFAF1 /* JapanTripPage6ViewController.m */; };
+		37D6C12F1995495700EEFAF1 /* JapanTripPage6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C12D1995495700EEFAF1 /* JapanTripPage6ViewController.xib */; };
+		37D6C1331995497100EEFAF1 /* JapanTripPageEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C1311995497100EEFAF1 /* JapanTripPageEndViewController.m */; };
+		37D6C1341995497100EEFAF1 /* JapanTripPageEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C1321995497100EEFAF1 /* JapanTripPageEndViewController.xib */; };
+		37D6C13E19993D3B00EEFAF1 /* JapanTripPage1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6C13C19993D3B00EEFAF1 /* JapanTripPage1ViewController.m */; };
+		37D6C13F19993D3B00EEFAF1 /* JapanTripPage1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D6C13D19993D3B00EEFAF1 /* JapanTripPage1ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +93,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370B38D4196DF2D7004B60F0 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		370B38D5196DF2D7004B60F0 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		370B38D6196DF2D7004B60F0 /* testViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testViewController.xib; sourceTree = "<group>"; };
 		371909741960A02600ACBDB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		371909751960A02600ACBDB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		371909761960A02600ACBDB8 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -89,15 +133,67 @@
 		37300E5519515E9E006A472B /* composrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "composrTests-Info.plist"; sourceTree = "<group>"; };
 		37300E5719515E9E006A472B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37300E5919515E9E006A472B /* composrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = composrTests.m; sourceTree = "<group>"; };
-		37300E6319515F4B006A472B /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		37300E6419515F4B006A472B /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		37300E6519515F4B006A472B /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
-		37300E6D19538F5B006A472B /* ComposeSubjectToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeSubjectToViewController.h; sourceTree = "<group>"; };
-		37300E6E19538F5B006A472B /* ComposeSubjectToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeSubjectToViewController.m; sourceTree = "<group>"; };
-		37300E6F19538F5B006A472B /* ComposeSubjectToViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeSubjectToViewController.xib; sourceTree = "<group>"; };
-		37300E72195398FC006A472B /* ChooseTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTypeViewController.h; sourceTree = "<group>"; };
-		37300E73195398FC006A472B /* ChooseTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTypeViewController.m; sourceTree = "<group>"; };
-		37300E74195398FC006A472B /* ChooseTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseTypeViewController.xib; sourceTree = "<group>"; };
+		378E187B19707B1100D40EF2 /* letterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = letterCell.h; sourceTree = "<group>"; };
+		378E187C19707B1100D40EF2 /* letterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = letterCell.m; sourceTree = "<group>"; };
+		378E187D19707B1100D40EF2 /* letterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = letterCell.xib; sourceTree = "<group>"; };
+		378E18851978789800D40EF2 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		378E18861978789800D40EF2 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		378E18871978789800D40EF2 /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		378E188A19788A5900D40EF2 /* SubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectViewController.h; sourceTree = "<group>"; };
+		378E188B19788A5900D40EF2 /* SubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectViewController.m; sourceTree = "<group>"; };
+		378E188C19788A5900D40EF2 /* SubjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectViewController.xib; sourceTree = "<group>"; };
+		37D6C057197E380000EEFAF1 /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToViewController.h; sourceTree = "<group>"; };
+		37D6C058197E380000EEFAF1 /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToViewController.m; sourceTree = "<group>"; };
+		37D6C059197E380000EEFAF1 /* ToViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToViewController.xib; sourceTree = "<group>"; };
+		37D6C0AA1981C2B700EEFAF1 /* Josefin Sans 600.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Josefin Sans 600.ttf"; sourceTree = "<group>"; };
+		37D6C0AB1981C2B700EEFAF1 /* Josefin Sans regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Josefin Sans regular.ttf"; sourceTree = "<group>"; };
+		37D6C0AC1981C2B700EEFAF1 /* Lato 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato 300.ttf"; sourceTree = "<group>"; };
+		37D6C0AD1981C2B700EEFAF1 /* Lato 700italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato 700italic.ttf"; sourceTree = "<group>"; };
+		37D6C0AE1981C2B700EEFAF1 /* Lato 900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato 900.ttf"; sourceTree = "<group>"; };
+		37D6C0AF1981C2B700EEFAF1 /* Lato regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato regular.ttf"; sourceTree = "<group>"; };
+		37D6C0B01981C2B700EEFAF1 /* Merriweather regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather regular.ttf"; sourceTree = "<group>"; };
+		37D6C0B11981C2B700EEFAF1 /* MinionPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Bold.otf"; sourceTree = "<group>"; };
+		37D6C0B21981C2B700EEFAF1 /* Montserrat regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat regular.ttf"; sourceTree = "<group>"; };
+		37D6C0B31981C2B700EEFAF1 /* Oswald regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald regular.ttf"; sourceTree = "<group>"; };
+		37D6C0B41981C2B700EEFAF1 /* PT Sans regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans regular.ttf"; sourceTree = "<group>"; };
+		37D6C0B51981C2B700EEFAF1 /* PT Serif regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Serif regular.ttf"; sourceTree = "<group>"; };
+		37D6C0C61981C33500EEFAF1 /* EBGaramond-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Regular.ttf"; sourceTree = "<group>"; };
+		37D6C0C81982C2BB00EEFAF1 /* EmailBodyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailBodyViewController.h; sourceTree = "<group>"; };
+		37D6C0C91982C2BB00EEFAF1 /* EmailBodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailBodyViewController.m; sourceTree = "<group>"; };
+		37D6C0CA1982C2BB00EEFAF1 /* EmailBodyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailBodyViewController.xib; sourceTree = "<group>"; };
+		37D6C0CD198767C600EEFAF1 /* EmailPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailPreviewViewController.h; sourceTree = "<group>"; };
+		37D6C0CE198767C600EEFAF1 /* EmailPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailPreviewViewController.m; sourceTree = "<group>"; };
+		37D6C0CF198767C600EEFAF1 /* EmailPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailPreviewViewController.xib; sourceTree = "<group>"; };
+		37D6C1021988665F00EEFAF1 /* PageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTextViewController.h; sourceTree = "<group>"; };
+		37D6C1031988665F00EEFAF1 /* PageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTextViewController.m; sourceTree = "<group>"; };
+		37D6C1041988665F00EEFAF1 /* PageTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTextViewController.xib; sourceTree = "<group>"; };
+		37D6C1071988677C00EEFAF1 /* PageEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageEndViewController.h; sourceTree = "<group>"; };
+		37D6C1081988677C00EEFAF1 /* PageEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageEndViewController.m; sourceTree = "<group>"; };
+		37D6C1091988677C00EEFAF1 /* PageEndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageEndViewController.xib; sourceTree = "<group>"; };
+		37D6C10D199548B100EEFAF1 /* JapanTripEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripEmailViewController.h; sourceTree = "<group>"; };
+		37D6C10E199548B100EEFAF1 /* JapanTripEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripEmailViewController.m; sourceTree = "<group>"; };
+		37D6C10F199548B100EEFAF1 /* JapanTripEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripEmailViewController.xib; sourceTree = "<group>"; };
+		37D6C1171995491400EEFAF1 /* JapanTripPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPage2ViewController.h; sourceTree = "<group>"; };
+		37D6C1181995491400EEFAF1 /* JapanTripPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPage2ViewController.m; sourceTree = "<group>"; };
+		37D6C1191995491400EEFAF1 /* JapanTripPage2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPage2ViewController.xib; sourceTree = "<group>"; };
+		37D6C11C1995492700EEFAF1 /* JapanTripPage3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPage3ViewController.h; sourceTree = "<group>"; };
+		37D6C11D1995492700EEFAF1 /* JapanTripPage3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPage3ViewController.m; sourceTree = "<group>"; };
+		37D6C11E1995492700EEFAF1 /* JapanTripPage3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPage3ViewController.xib; sourceTree = "<group>"; };
+		37D6C1211995493600EEFAF1 /* JapanTripPage4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPage4ViewController.h; sourceTree = "<group>"; };
+		37D6C1221995493600EEFAF1 /* JapanTripPage4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPage4ViewController.m; sourceTree = "<group>"; };
+		37D6C1231995493600EEFAF1 /* JapanTripPage4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPage4ViewController.xib; sourceTree = "<group>"; };
+		37D6C1261995494600EEFAF1 /* JapanTripPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPage5ViewController.h; sourceTree = "<group>"; };
+		37D6C1271995494600EEFAF1 /* JapanTripPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPage5ViewController.m; sourceTree = "<group>"; };
+		37D6C1281995494600EEFAF1 /* JapanTripPage5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPage5ViewController.xib; sourceTree = "<group>"; };
+		37D6C12B1995495700EEFAF1 /* JapanTripPage6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPage6ViewController.h; sourceTree = "<group>"; };
+		37D6C12C1995495700EEFAF1 /* JapanTripPage6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPage6ViewController.m; sourceTree = "<group>"; };
+		37D6C12D1995495700EEFAF1 /* JapanTripPage6ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPage6ViewController.xib; sourceTree = "<group>"; };
+		37D6C1301995497100EEFAF1 /* JapanTripPageEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPageEndViewController.h; sourceTree = "<group>"; };
+		37D6C1311995497100EEFAF1 /* JapanTripPageEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPageEndViewController.m; sourceTree = "<group>"; };
+		37D6C1321995497100EEFAF1 /* JapanTripPageEndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPageEndViewController.xib; sourceTree = "<group>"; };
+		37D6C13B19993D3B00EEFAF1 /* JapanTripPage1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanTripPage1ViewController.h; sourceTree = "<group>"; };
+		37D6C13C19993D3B00EEFAF1 /* JapanTripPage1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanTripPage1ViewController.m; sourceTree = "<group>"; };
+		37D6C13D19993D3B00EEFAF1 /* JapanTripPage1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanTripPage1ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,19 +253,12 @@
 		37300E3A19515E9D006A472B /* composr */ = {
 			isa = PBXGroup;
 			children = (
+				37D6C10C1995486B00EEFAF1 /* Email Examples */,
+				37D6C0A71981BDE300EEFAF1 /* Resources */,
 				37300E4319515E9D006A472B /* AppDelegate.h */,
 				37300E4419515E9D006A472B /* AppDelegate.m */,
 				37300E4619515E9D006A472B /* Images.xcassets */,
 				37300E3B19515E9D006A472B /* Supporting Files */,
-				37300E6319515F4B006A472B /* ListViewController.h */,
-				37300E6419515F4B006A472B /* ListViewController.m */,
-				37300E6519515F4B006A472B /* ListViewController.xib */,
-				37300E6D19538F5B006A472B /* ComposeSubjectToViewController.h */,
-				37300E6E19538F5B006A472B /* ComposeSubjectToViewController.m */,
-				37300E6F19538F5B006A472B /* ComposeSubjectToViewController.xib */,
-				37300E72195398FC006A472B /* ChooseTypeViewController.h */,
-				37300E73195398FC006A472B /* ChooseTypeViewController.m */,
-				37300E74195398FC006A472B /* ChooseTypeViewController.xib */,
 				371909741960A02600ACBDB8 /* LoginViewController.h */,
 				371909751960A02600ACBDB8 /* LoginViewController.m */,
 				371909761960A02600ACBDB8 /* LoginViewController.xib */,
@@ -191,6 +280,33 @@
 				3719099219628BAC00ACBDB8 /* Tab2ViewController.h */,
 				3719099319628BAC00ACBDB8 /* Tab2ViewController.m */,
 				3719099419628BAC00ACBDB8 /* Tab2ViewController.xib */,
+				370B38D4196DF2D7004B60F0 /* testViewController.h */,
+				370B38D5196DF2D7004B60F0 /* testViewController.m */,
+				370B38D6196DF2D7004B60F0 /* testViewController.xib */,
+				378E187B19707B1100D40EF2 /* letterCell.h */,
+				378E187C19707B1100D40EF2 /* letterCell.m */,
+				378E187D19707B1100D40EF2 /* letterCell.xib */,
+				378E18851978789800D40EF2 /* TextViewController.h */,
+				378E18861978789800D40EF2 /* TextViewController.m */,
+				378E18871978789800D40EF2 /* TextViewController.xib */,
+				378E188A19788A5900D40EF2 /* SubjectViewController.h */,
+				378E188B19788A5900D40EF2 /* SubjectViewController.m */,
+				378E188C19788A5900D40EF2 /* SubjectViewController.xib */,
+				37D6C057197E380000EEFAF1 /* ToViewController.h */,
+				37D6C058197E380000EEFAF1 /* ToViewController.m */,
+				37D6C059197E380000EEFAF1 /* ToViewController.xib */,
+				37D6C0C81982C2BB00EEFAF1 /* EmailBodyViewController.h */,
+				37D6C0C91982C2BB00EEFAF1 /* EmailBodyViewController.m */,
+				37D6C0CA1982C2BB00EEFAF1 /* EmailBodyViewController.xib */,
+				37D6C0CD198767C600EEFAF1 /* EmailPreviewViewController.h */,
+				37D6C0CE198767C600EEFAF1 /* EmailPreviewViewController.m */,
+				37D6C0CF198767C600EEFAF1 /* EmailPreviewViewController.xib */,
+				37D6C1021988665F00EEFAF1 /* PageTextViewController.h */,
+				37D6C1031988665F00EEFAF1 /* PageTextViewController.m */,
+				37D6C1041988665F00EEFAF1 /* PageTextViewController.xib */,
+				37D6C1071988677C00EEFAF1 /* PageEndViewController.h */,
+				37D6C1081988677C00EEFAF1 /* PageEndViewController.m */,
+				37D6C1091988677C00EEFAF1 /* PageEndViewController.xib */,
 			);
 			path = composr;
 			sourceTree = "<group>";
@@ -222,6 +338,57 @@
 				37300E5619515E9E006A472B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37D6C0A71981BDE300EEFAF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37D6C0C61981C33500EEFAF1 /* EBGaramond-Regular.ttf */,
+				37D6C0AA1981C2B700EEFAF1 /* Josefin Sans 600.ttf */,
+				37D6C0AB1981C2B700EEFAF1 /* Josefin Sans regular.ttf */,
+				37D6C0AC1981C2B700EEFAF1 /* Lato 300.ttf */,
+				37D6C0AD1981C2B700EEFAF1 /* Lato 700italic.ttf */,
+				37D6C0AE1981C2B700EEFAF1 /* Lato 900.ttf */,
+				37D6C0AF1981C2B700EEFAF1 /* Lato regular.ttf */,
+				37D6C0B01981C2B700EEFAF1 /* Merriweather regular.ttf */,
+				37D6C0B11981C2B700EEFAF1 /* MinionPro-Bold.otf */,
+				37D6C0B21981C2B700EEFAF1 /* Montserrat regular.ttf */,
+				37D6C0B31981C2B700EEFAF1 /* Oswald regular.ttf */,
+				37D6C0B41981C2B700EEFAF1 /* PT Sans regular.ttf */,
+				37D6C0B51981C2B700EEFAF1 /* PT Serif regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		37D6C10C1995486B00EEFAF1 /* Email Examples */ = {
+			isa = PBXGroup;
+			children = (
+				37D6C10D199548B100EEFAF1 /* JapanTripEmailViewController.h */,
+				37D6C10E199548B100EEFAF1 /* JapanTripEmailViewController.m */,
+				37D6C10F199548B100EEFAF1 /* JapanTripEmailViewController.xib */,
+				37D6C13B19993D3B00EEFAF1 /* JapanTripPage1ViewController.h */,
+				37D6C13C19993D3B00EEFAF1 /* JapanTripPage1ViewController.m */,
+				37D6C13D19993D3B00EEFAF1 /* JapanTripPage1ViewController.xib */,
+				37D6C1171995491400EEFAF1 /* JapanTripPage2ViewController.h */,
+				37D6C1181995491400EEFAF1 /* JapanTripPage2ViewController.m */,
+				37D6C1191995491400EEFAF1 /* JapanTripPage2ViewController.xib */,
+				37D6C11C1995492700EEFAF1 /* JapanTripPage3ViewController.h */,
+				37D6C11D1995492700EEFAF1 /* JapanTripPage3ViewController.m */,
+				37D6C11E1995492700EEFAF1 /* JapanTripPage3ViewController.xib */,
+				37D6C1211995493600EEFAF1 /* JapanTripPage4ViewController.h */,
+				37D6C1221995493600EEFAF1 /* JapanTripPage4ViewController.m */,
+				37D6C1231995493600EEFAF1 /* JapanTripPage4ViewController.xib */,
+				37D6C1261995494600EEFAF1 /* JapanTripPage5ViewController.h */,
+				37D6C1271995494600EEFAF1 /* JapanTripPage5ViewController.m */,
+				37D6C1281995494600EEFAF1 /* JapanTripPage5ViewController.xib */,
+				37D6C12B1995495700EEFAF1 /* JapanTripPage6ViewController.h */,
+				37D6C12C1995495700EEFAF1 /* JapanTripPage6ViewController.m */,
+				37D6C12D1995495700EEFAF1 /* JapanTripPage6ViewController.xib */,
+				37D6C1301995497100EEFAF1 /* JapanTripPageEndViewController.h */,
+				37D6C1311995497100EEFAF1 /* JapanTripPageEndViewController.m */,
+				37D6C1321995497100EEFAF1 /* JapanTripPageEndViewController.xib */,
+			);
+			name = "Email Examples";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,17 +467,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				3719097D196104AE00ACBDB8 /* TabViewController.xib in Resources */,
+				37D6C0BA1981C2B700EEFAF1 /* Josefin Sans regular.ttf in Resources */,
+				37D6C111199548B100EEFAF1 /* JapanTripEmailViewController.xib in Resources */,
+				37D6C0C31981C2B700EEFAF1 /* PT Sans regular.ttf in Resources */,
+				37D6C0B91981C2B700EEFAF1 /* Josefin Sans 600.ttf in Resources */,
 				3719098719611C6800ACBDB8 /* MyselfViewController.xib in Resources */,
-				37300E76195398FC006A472B /* ChooseTypeViewController.xib in Resources */,
+				378E188E19788A5900D40EF2 /* SubjectViewController.xib in Resources */,
+				370B38D8196DF2D7004B60F0 /* testViewController.xib in Resources */,
+				37D6C1061988665F00EEFAF1 /* PageTextViewController.xib in Resources */,
 				3719099619628BAC00ACBDB8 /* Tab2ViewController.xib in Resources */,
+				378E187F19707B1100D40EF2 /* letterCell.xib in Resources */,
 				37300E3F19515E9D006A472B /* InfoPlist.strings in Resources */,
 				371909781960A02600ACBDB8 /* LoginViewController.xib in Resources */,
+				37D6C0BC1981C2B700EEFAF1 /* Lato 700italic.ttf in Resources */,
+				37D6C10B1988677C00EEFAF1 /* PageEndViewController.xib in Resources */,
+				37D6C0D1198767C600EEFAF1 /* EmailPreviewViewController.xib in Resources */,
+				37D6C0BB1981C2B700EEFAF1 /* Lato 300.ttf in Resources */,
+				37D6C13F19993D3B00EEFAF1 /* JapanTripPage1ViewController.xib in Resources */,
 				3719098219611C5B00ACBDB8 /* ListLettersViewController.xib in Resources */,
-				37300E7119538F5B006A472B /* ComposeSubjectToViewController.xib in Resources */,
+				37D6C0C41981C2B700EEFAF1 /* PT Serif regular.ttf in Resources */,
+				37D6C0C11981C2B700EEFAF1 /* Montserrat regular.ttf in Resources */,
+				37D6C1251995493600EEFAF1 /* JapanTripPage4ViewController.xib in Resources */,
+				37D6C12A1995494600EEFAF1 /* JapanTripPage5ViewController.xib in Resources */,
+				37D6C0BD1981C2B700EEFAF1 /* Lato 900.ttf in Resources */,
+				37D6C05B197E380000EEFAF1 /* ToViewController.xib in Resources */,
+				37D6C11B1995491400EEFAF1 /* JapanTripPage2ViewController.xib in Resources */,
 				37300E4719515E9D006A472B /* Images.xcassets in Resources */,
+				37D6C0C21981C2B700EEFAF1 /* Oswald regular.ttf in Resources */,
+				37D6C12F1995495700EEFAF1 /* JapanTripPage6ViewController.xib in Resources */,
+				37D6C0C71981C34500EEFAF1 /* EBGaramond-Regular.ttf in Resources */,
+				378E18891978789800D40EF2 /* TextViewController.xib in Resources */,
+				37D6C0C01981C2B700EEFAF1 /* MinionPro-Bold.otf in Resources */,
+				37D6C0BF1981C2B700EEFAF1 /* Merriweather regular.ttf in Resources */,
 				3719099119612E1000ACBDB8 /* SelectTypeViewController.xib in Resources */,
+				37D6C1341995497100EEFAF1 /* JapanTripPageEndViewController.xib in Resources */,
+				37D6C0CC1982C2BB00EEFAF1 /* EmailBodyViewController.xib in Resources */,
+				37D6C1201995492700EEFAF1 /* JapanTripPage3ViewController.xib in Resources */,
+				37D6C0BE1981C2B700EEFAF1 /* Lato regular.ttf in Resources */,
 				3719098C196121E700ACBDB8 /* EmptyListViewController.xib in Resources */,
-				37300E6719515F4B006A472B /* ListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,18 +523,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D6C11A1995491400EEFAF1 /* JapanTripPage2ViewController.m in Sources */,
+				37D6C0D0198767C600EEFAF1 /* EmailPreviewViewController.m in Sources */,
 				37300E4519515E9D006A472B /* AppDelegate.m in Sources */,
+				37D6C13E19993D3B00EEFAF1 /* JapanTripPage1ViewController.m in Sources */,
+				37D6C1291995494600EEFAF1 /* JapanTripPage5ViewController.m in Sources */,
 				3719099019612E1000ACBDB8 /* SelectTypeViewController.m in Sources */,
+				37D6C10A1988677C00EEFAF1 /* PageEndViewController.m in Sources */,
+				37D6C1331995497100EEFAF1 /* JapanTripPageEndViewController.m in Sources */,
 				37300E4119515E9D006A472B /* main.m in Sources */,
+				378E18881978789800D40EF2 /* TextViewController.m in Sources */,
+				378E188D19788A5900D40EF2 /* SubjectViewController.m in Sources */,
+				37D6C1051988665F00EEFAF1 /* PageTextViewController.m in Sources */,
 				3719098619611C6800ACBDB8 /* MyselfViewController.m in Sources */,
+				37D6C0CB1982C2BB00EEFAF1 /* EmailBodyViewController.m in Sources */,
+				37D6C11F1995492700EEFAF1 /* JapanTripPage3ViewController.m in Sources */,
 				371909771960A02600ACBDB8 /* LoginViewController.m in Sources */,
-				37300E7019538F5B006A472B /* ComposeSubjectToViewController.m in Sources */,
+				37D6C110199548B100EEFAF1 /* JapanTripEmailViewController.m in Sources */,
+				37D6C1241995493600EEFAF1 /* JapanTripPage4ViewController.m in Sources */,
+				378E187E19707B1100D40EF2 /* letterCell.m in Sources */,
 				3719098119611C5B00ACBDB8 /* ListLettersViewController.m in Sources */,
-				37300E75195398FC006A472B /* ChooseTypeViewController.m in Sources */,
 				3719097C196104AE00ACBDB8 /* TabViewController.m in Sources */,
 				3719098B196121E700ACBDB8 /* EmptyListViewController.m in Sources */,
-				37300E6619515F4B006A472B /* ListViewController.m in Sources */,
+				37D6C05A197E380000EEFAF1 /* ToViewController.m in Sources */,
+				370B38D7196DF2D7004B60F0 /* testViewController.m in Sources */,
 				3719099519628BAC00ACBDB8 /* Tab2ViewController.m in Sources */,
+				37D6C12E1995495700EEFAF1 /* JapanTripPage6ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

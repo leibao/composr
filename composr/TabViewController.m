@@ -11,6 +11,7 @@
 #import "MyselfViewController.h"
 #import "EmptyListViewController.h"
 #import "SelectTypeViewController.h"
+#import "ComposeSubjectToViewController.h"
 
 @interface TabViewController ()
 
@@ -22,6 +23,8 @@
 
 @property (strong, nonatomic) UIWindow *selectTypeWindow;
 @property (weak, nonatomic) IBOutlet UIView *bouncer;
+
+@property (strong, nonatomic) UIWindow *foregroundWindow;
 
 - (IBAction)ontab1:(id)sender;
 - (IBAction)ontab2:(id)sender;
@@ -39,17 +42,12 @@
         self.tab1vc = [[ListLettersViewController alloc] init];
         self.emptytab1vc = [[EmptyListViewController alloc] init];
         //self.emptytab1nvc = [[UINavigationController alloc] initWithRootViewController:self.emptytab1vc];
-
-        
+      
         self.tab2vc = [[MyselfViewController alloc] init];
         
         //self.emptytab1nvc.navigationBar.alpha = 0;
        // self.emptytab1nvc.navigationBar.translucent = YES;
-        
-
-        
-        
-        
+       
     }
     return self;
 }
@@ -58,9 +56,16 @@
 
 - (void)viewDidLoad
 {
-
     
-
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
     
     [super viewDidLoad];
     self.emptytab1vc.view.frame = self.DisplayView.frame;
@@ -76,9 +81,38 @@
         
     } completion:nil];
     
-    
-    
+  
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+    //clear default keys
+    NSString *subjectText = @"Subject";
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:subjectText forKey:@"subjectText"];
+    
+    NSString *toText = @"To";
+    
+    [defaults setObject:toText forKey:@"toText"];
+    
+    NSString *bodyText = @"";
+    
+    [defaults setObject:bodyText forKey:@"bodyText"];
+    
+    NSString *startTypingLabelText = @"Start typing here...";
+    
+    [defaults setObject:startTypingLabelText forKey:@"startTypingLabelText"];
+    
+    NSString *templatecount = @"template1";
+
+    [defaults setObject:templatecount forKey:@"templatecount"];
+    
+    int pagecount = 0;
+    
+    [defaults setInteger:pagecount forKey:@"pagecount"];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -101,13 +135,27 @@
 }
 
 - (IBAction)onCompose:(id)sender {
-    
+//    loading mail types
     self.selectTypeWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.selectTypeWindow.rootViewController = [SelectTypeViewController new];
     self.selectTypeWindow.windowLevel = UIWindowLevelStatusBar;
     self.selectTypeWindow.hidden = NO;
     
     self.bouncer.hidden = YES;
+
+    //Loading the subject-to page
+    
+    //self.foregroundWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[ComposeSubjectToViewController new]];
+//    
+//    self.foregroundWindow.rootViewController = nvc;
+//    
+//    //self.foregroundWindow.rootViewController = [ComposeSubjectToViewController new];
+//    self.foregroundWindow.windowLevel = UIWindowLevelStatusBar;
+//    self.foregroundWindow.hidden = NO;
+    
+    
+    
     
 }
 @end

@@ -41,6 +41,8 @@
 //    self.foregroundWindow.windowLevel = UIWindowLevelStatusBar;
 //    self.foregroundWindow.hidden = NO;
     
+
+
     
     return YES;
 }

@@ -9,24 +9,29 @@
 #import "ComposeSubjectToViewController.h"
 #import "ChooseTypeViewController.h"
 #import "ListViewController.h"
+#import "SelectTypeViewController.h"
+#import "testViewController.h"
+#import "TextViewController.h"
 
 
 @interface ComposeSubjectToViewController ()
 @property (weak, nonatomic) IBOutlet UIView *inputFields;
 @property (weak, nonatomic) IBOutlet UITextField *subjectField;
 @property (weak, nonatomic) IBOutlet UITextField *toField;
-@property (weak, nonatomic) IBOutlet UIView *buttonBar;
+
 
 @property (strong, nonatomic) IBOutlet UIView *wholeView;
 
 - (IBAction)onTap:(id)sender;
-- (IBAction)onNext:(id)sender;
+
 - (IBAction)onDrag:(UIPanGestureRecognizer *)sender;
 
 - (IBAction)onSwipeLeft:(UISwipeGestureRecognizer *)sender;
 
 - (IBAction)onTapTo:(id)sender;
 
+- (void)onLeftButton;
+- (void)onRightButton;
 
 
 - (void)willShowKeyboard:(NSNotification *)notification;
@@ -56,7 +61,15 @@ float inputFieldsOriginalY;
     // Do any additional setup after loading the view from its nib.
     [self.subjectField becomeFirstResponder];
     
-
+    self.navigationItem.title = @"New Letter";
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(onLeftButton)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(onRightButton)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
     
 }
 
@@ -160,8 +173,29 @@ float inputFieldsOriginalY;
     [UIView animateWithDuration:0.5 animations:^{
             self.inputFields.frame = CGRectMake(0, self.inputFields.frame.origin.y - 180, self.inputFields.frame.size.width, self.inputFields.frame.size.height);
     }];
-    
+    [self.view endEditing:YES];
 
+}
+
+- (void)onLeftButton {
+    NSLog(@"leftbutton");
+    
+    self.view.window.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height);
+    
+    [self.view endEditing:YES];
+}
+
+- (void)onRightButton {
+    NSLog(@"rightbutton");
+    
+    //load Choose Type page
+    ChooseTypeViewController *selectTypeVC = [[ChooseTypeViewController alloc] init];
+    
+    
+    [self.navigationController pushViewController:selectTypeVC animated:YES];
+    
+    
+   // [self.view endEditing:YES];
 }
 
 
@@ -193,7 +227,7 @@ float inputFieldsOriginalY;
 
                          self.inputFields.frame = CGRectMake(0, self.inputFields.frame.origin.y - kbSize.height + 150, self.inputFields.frame.size.width, self.inputFields.frame.size.height);
                          
-                         self.buttonBar.frame = CGRectMake(0, self.buttonBar.frame.origin.y - kbSize.height, self.buttonBar.frame.size.width, self.buttonBar.frame.size.height);
+//                         self.buttonBar.frame = CGRectMake(0, self.buttonBar.frame.origin.y - kbSize.height, self.buttonBar.frame.size.width, self.buttonBar.frame.size.height);
                          
 
                          
@@ -219,7 +253,7 @@ float inputFieldsOriginalY;
 
                          self.inputFields.frame = CGRectMake(0, self.inputFields.frame.origin.y + kbSize.height - 150, self.inputFields.frame.size.width, self.inputFields.frame.size.height);
                          
-                         self.buttonBar.frame = CGRectMake(0, self.buttonBar.frame.origin.y + kbSize.height, self.buttonBar.frame.size.width, self.buttonBar.frame.size.height);
+ //                        self.buttonBar.frame = CGRectMake(0, self.buttonBar.frame.origin.y + kbSize.height, self.buttonBar.frame.size.width, self.buttonBar.frame.size.height);
 
                         
                          
